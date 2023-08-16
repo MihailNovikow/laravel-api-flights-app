@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/aircraft_airports',//?tail={tail}&date_from={date_from}&date_to={date_to}',
+Route::get('/aircraft_airports',
 [FlightController::class, 'index']);
